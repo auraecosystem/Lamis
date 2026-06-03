@@ -14,14 +14,7 @@ Install-BoxstarterPackage https://raw.githubusercontent.com/nodejs/node/HEAD/too
 refreshenv
 sudo usermod -aG audio $USER
 speaker-test -t wav -c 2
-OPENAI_API_KEY=
-GEMINI_API_KEY=
-ANTHROPIC_API_KEY=
-GROQ_API_KEY=
-OPENROUTER_API_KEY=
 
-DATABASE_URL=sqlite:///lamis.db
-CHROMA_DB=./memory
-
-WHISPER_MODEL=large-v3
-OLLAMA_HOST=http://localhost:11434
+"ollama pull llama3.3"
+"ollama pull qwen3"
+"ollama pull mistral"
