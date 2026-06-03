@@ -20,3 +20,17 @@ openai-whisper \
 pydantic \
 python-dotenv \
 websockets
+# Install Cachix
+nix profile install nixpkgs#cachix
+
+# Authenticate
+cachix authtoken YOUR_TOKEN
+
+# Create or use a cache
+cachix use lamis
+
+# Build project
+nix build
+
+# Push build outputs
+nix build --no-link --print-out-paths | cachix push lamis
