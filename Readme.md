@@ -97,6 +97,8 @@ Physical Actuation
 | Software Stack | Python 3.11, LAMIS Realtime, OpenAI Realtime API |
 
 ---
+<img width="1577" height="860" alt="image" src="https://github.com/user-attachments/assets/79af21bc-128a-440a-955c-c0c57b756d63" />
+
 
 ## 👁️ Modes of Operation
 
@@ -105,6 +107,8 @@ Physical Actuation
 3️⃣ **Autonomous Social Mode** – Visual gesture recognition without voice; confidence-based actuation ensures safety.
 
 ---
+<img width="1358" height="782" alt="image" src="https://github.com/user-attachments/assets/8ef6ae73-ccc0-4083-9410-e41b566ef184" />
+
 
 ## 💰 Cost & Efficiency
 
@@ -123,6 +127,8 @@ Physical Actuation
 - Conditional vision activation
 
 ---
+<img width="1200" height="829" alt="image" src="https://github.com/user-attachments/assets/495feb68-a566-4959-8c87-3f041df96628" />
+
 
 ## 🛡 Safety Principles
 
@@ -134,6 +140,8 @@ Physical Actuation
 **Motto:** Safety > Aesthetics
 
 ---
+
+<img width="1024" height="948" alt="image" src="https://github.com/user-attachments/assets/d0d19daa-c3c1-40e7-9fc1-d51a410c989c" />
 
 ## 🧩 Strategic Applications
 
