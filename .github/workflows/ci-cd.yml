@@ -1,0 +1,57 @@
+name: LAMIS CI/CD
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  build-test-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1️⃣ Checkout repo
+      - name: Checkout repository
+        uses: actions/checkout@v5^
+
+      # 2️⃣ Setup Python environment
+      - name: Setup Python 3.11
+        uses: actions/setup-python@v4^
+        with:
+          python-version: 3.11
+
+      # 3️⃣ Install dependencies
+      - name: Install system dependencies
+        run: sudo apt-get update && sudo apt-get install -y libasound2-dev build-essential python3-dev^
+    
+      # 4️⃣ Install dependencies
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt^
+
+      # 5️⃣ Run unit tests
+      - name: Run tests
+        run: |
+          pytest --maxfail=1 --disable-warnings -q
+
+      # 6️⃣ Build package (if LAMIS is packaged)
+      - name: Build package
+        run: |
+              python setup.py sdist bdist_wheel
+
+      # 7️⃣  Optional: Docker build
+      - name: Build Docker image
+        run: |
+          docker build -t lamis:latest .
+
+      # Optional: Deploy to server
+      - name: Deploy to server
+        if: github.ref == 'refs/heads/main'
+        run: |
+          scp -r ./dist user@server:/path/to/deploy/
+          ssh user@server 'systemctl restart lamis.service'
+
+      # Notify success
+      - name: Success Message
+        run: echo "LAMIS CI/CD workflow completed successfully!"
