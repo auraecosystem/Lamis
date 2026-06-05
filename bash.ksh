@@ -34,3 +34,10 @@ nix build
 
 # Push build outputs
 nix build --no-link --print-out-paths | cachix push lamis
+# Livecrawl both web and news results
+curl -G https://ydc-index.io/v1/search \
+  -H "X-API-Key: api_key" \
+  --data-urlencode "query=latest AI developments" \
+  -d count=5 \
+  -d livecrawl=all \
+  -d livecrawl_formats=markdown
