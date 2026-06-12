@@ -202,6 +202,25 @@ LAMIS is **embodied intelligence** — a leap beyond software into real-world au
 ---
 
 *© 2026 LAMIS — Large Multimodal System. All Rights Reserved.*
-```
 
----
+**✨ Meet LAMIS — Your Robot's New Soul ✨**
+
+Imagine a robot that doesn’t just follow commands… but truly *sees* you, *hears* your tone, understands the moment, and responds with gentle intelligence.  
+
+That’s **LAMIS** — the **Large Multimodal System** built to bring **embodied AI** to life. 🤖💖
+
+LAMIS weaves together real-time voice, vision, and safe physical action into one seamless, thoughtful loop. Whether it’s greeting visitors with warmth, assisting in a home or hospital, or exploring playful interactions — LAMIS turns cold hardware into something almost *alive*.
+
+🌟 **What makes it special?**
+- Streaming voice conversations with emotional awareness 🎙️
+- Continuous visual understanding of its surroundings 👀
+- Smart, safety-first movements and gestures 🦾
+- Built for real-world robots like the Unitree G1, with cost-aware intelligence
+
+It’s not just another AI tool. It’s a bridge between digital minds and the physical world — crafted with care for robotics enthusiasts, researchers, and dreamers building the future of human-robot companionship.
+
+If you’ve ever wished robots could be kinder, more aware, and genuinely interactive… LAMIS is that dream in motion. ❤️
+
+🔗 Check it out: [github.com/auraecosystem/Lamis](https://github.com/auraecosystem/Lamis)
+
+Who else is excited to see robots with a heart? Drop a ❤️ or tag a robotics friend! 🚀
