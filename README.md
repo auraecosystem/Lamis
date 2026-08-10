@@ -1,10 +1,23 @@
+``` id="lamis-whitepaper" 🤖
+ LAMIS — LARGE MULTIMODAL SYSTEM
+### Whitepaper(2026 Edition) 
+```
 
-![id="lamis-whitepaper 🤖 LAMIS — LARGE MULTIMODAL SYSTEM](#)
+[![Licence](https://img.shields.io/badge/license-MIT-green)](LICENSE) 
+[![Python Version](https://img.shields.io/badge/python-3.11-blue)](https://www.python.org/) [![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](#)
 
-### Whitepaper (2026 Edition)
-[![Licence(https://img.shields.io/badge/license-MIT-green)](LICENSE) [![Python Version](https://img.shields.io/badge/python-3.11-blue)](https://www.python.org/) [![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](#)
 
 ---
+
+# README/whitepaper 
+ **LAMIS** (Large Multimodal System), an open-source embodied AI framework developed by auraecosystem.
+
+### Key Highlights
+ * **Core Concept:** LAMIS provides real-time voice, vision, and autonomous decision-making for physical robots (such as the Unitree G1 quadruped).
+ * **Key Features:** Features streaming audio input/output, periodic visual context ingestion, safety-first gesture actuation, and cost-optimized operation.
+ * **Modes of Operation:** Supports Conversational Mode (voice + vision), Gesture Command Mode (voice-triggered gestures), and Autonomous Social Mode (visual gesture recognition without voice).
+ * **Hardware/Software Stack:** Integrates with Intel RealSense D435i depth cameras, Unitree G1 Arm SDK, Python 3.11, and OpenAI's Realtime API.
+
 
 ## 📖 Executive Summary
 
