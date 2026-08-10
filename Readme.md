@@ -49,7 +49,7 @@ kaggle competitions submit -c arc-prize-2026-arc-agi-3 -f submission.parquet -k 
 
 **Operational Loop:**
 
-```csharp
+```fsx
 
 Observe → Interpret → Decide → Act → Continue
 
@@ -97,6 +97,11 @@ Physical Actuation
 | Power | 12V Li-ion Battery |
 | Actuation | 12 Servos + Arm SDK |
 | Software Stack | Python 3.11, LAMIS Realtime, OpenAI Realtime API |
+>
+```shell
+kaggle competitions submit -c arc-prize-2026-arc-agi-3 -f submission.parquet -k auraecosystem/<NOTEBOOK> -v <VERSION> -m "Message"
+```
+
 
 ---
 <img width="1577" height="860" alt="image" src="https://github.com/user-attachments/assets/79af21bc-128a-440a-955c-c0c57b756d63" />
