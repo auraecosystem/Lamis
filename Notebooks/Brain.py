@@ -23,27 +23,6 @@ except:
 # ------------------------------
 # 1️⃣ Dynamic repos list
 # ------------------------------
-REPO_URLS = [
-    "https://github.com/Web4application/EDQ-AI",
-    "https://github.com/Web4application/Brain",
-    "https://github.com/Web4application/enclov-AI",
-    "https://github.com/Web4application/swiftbot",
-    "https://github.com/Web4application/reallms",
-    "https://github.com/Web4application/kubu-hai.model.h5",
-    "https://github.com/Web4application/SERAI",
-    "https://github.com/Web4application/pilot_ai",
-    "https://github.com/Web4application/RODAAI",
-    "https://github.com/Web4application/congen-ai",
-    "https://github.com/Web4application/Lola-AI-Assistant",
-    "https://github.com/Web4application/project-upgrader-ai",
-    "https://github.com/Web4application/qubuhub-voice-narrator",
-    "https://github.com/Web4application/Ogugu",
-    "https://github.com/Web4application/AgbakoAI",
-    "https://github.com/Web4application/Neuralog",
-    "https://github.com/Web4application/Model",
-    "https://github.com/Web4application/roda_prompt_generator",
-    "https://github.com/Web4application/Lola"
-]
 
 def clone_repos_dynamic(base_dir="repos"):
     os.makedirs(base_dir, exist_ok=True)
