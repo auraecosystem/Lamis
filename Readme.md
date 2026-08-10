@@ -34,7 +34,9 @@ LAMIS (Large Multimodal System) is an advanced AI framework that **empowers phys
 ## 🧠 Core Technology
 
 LAMIS is **not just a speech recognition or vision system**. It is a **continuous multimodal cognition engine**.
-
+```console
+kaggle competitions submit -c arc-prize-2026-arc-agi-3 -f submission.parquet -k auraecosystem/<NOTEBOOK> -v <VERSION> -m "Message"
+```
 ### Features
 
 - 🎙️ Streaming voice input & output
