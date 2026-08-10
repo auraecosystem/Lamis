@@ -1,11 +1,7 @@
-# 🤖 LAMIS — LARGE MULTIMODAL SYSTEM  
 
-```md
-id="lamis-whitepaper"
-🤖 LAMIS — LARGE MULTIMODAL SYSTEM 
-```
+![id="lamis-whitepaper 🤖 LAMIS — LARGE MULTIMODAL SYSTEM](#)
+
 ### Whitepaper (2026 Edition)
-
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE) [![Python Version](https://img.shields.io/badge/python-3.11-blue)](https://www.python.org/) [![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](#)
 
 ---
