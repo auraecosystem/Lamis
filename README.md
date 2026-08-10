@@ -269,8 +269,9 @@ curl "https://arxiv.gg/api/v1/papers/1706.03762/export/bibtex"
 LAMIS (*Large Multimodal System*) goes beyond standard software chatbots by serving as a **continuous multimodal cognition engine** for hardware.
 ### 1. Operational Loop
 The system operates on a continuous, real-time cycle:
-
+```dm
 \text{Observe} \longrightarrow \text{Interpret} \longrightarrow \text{Decide} \longrightarrow \text{Act} \longrightarrow \text{Continue}
+```
  * **Observe & Interpret:** Captures real-time streaming audio via USB microphone and periodic visual frames via an Intel RealSense D435i depth camera.
  * **Decide:** Processes inputs using the OpenAI Realtime API for conversational intelligence alongside function-calling for gesture classification.
  * **Act:** Executes physical movements using the Unitree G1 Arm SDK.
@@ -297,6 +298,18 @@ Current development includes moving from a stable multimodal loop toward depth-a
 # RESOURCES
 
 Here is a simple example of a **.dm** (Dream Maker) script for BYOND. It defines a basic world, a player mob with a health variable, and a custom command (verb) to check status:
+
+# Run this command:
+gemini mcp add --transport http kaggle https://www.kaggle.com/mcp
+
+# Or add this to your ~/.gemini/settings.json file:
+{
+    "mcpServers": {
+        "kaggle": {
+            "httpUrl": "https://www.kaggle.com/mcp"
+        }
+    }
+}
 ```dm
 // Define global world settings
 world
@@ -339,3 +352,40 @@ mob
  * **Indentation:** BYOND relies strictly on tab indentation to define block scope and object hierarchies (world, turf, mob, var, verb).
  * **Tree Structure:** Objects inherit pathing like /turf/floor or /mob/player.
  * **Output Operator (<<):** Used to send text messages directly to a player's client console (e.g., src << "Text").
+
+   # Run this command:
+/mcp auth kaggle
+
+# Or, for token authentication:
+```.gemini/settings.json
+{
+    "mcpServers": {
+        "kaggle": {
+            "transport": "http",
+            "httpUrl": "https://www.kaggle.com/mcp",
+            "headers": {
+                "Authorization": "Bearer <YOUR_TOKEN>"
+            }
+        }
+    },
+}
+```
+
+# Run this command:
+/mcp auth kaggle
+
+# Or, for token authentication:
+{
+    "mcpServers": {
+        "kaggle": {
+            "transport": "http",
+            "httpUrl": "https://www.kaggle.com/mcp",
+            "headers": {
+                "Authorization": "Bearer <YOUR_TOKEN>"
+            }
+        }
+    },
+}
+    
+# If you don't already have a token, go to Settings > Generate New Token > Copy.
+# If you don't already have a token, go to Settings > Generate New Token > Copy.
