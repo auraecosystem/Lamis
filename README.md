@@ -265,3 +265,32 @@ curl "https://arxiv.gg/api/v1/papers/1706.03762/graph"
 # Export as BibTeX
 curl "https://arxiv.gg/api/v1/papers/1706.03762/export/bibtex"
 ```
+## Deep Dive into the LAMIS Architecture & Features
+LAMIS (*Large Multimodal System*) goes beyond standard software chatbots by serving as a **continuous multimodal cognition engine** for hardware.
+### 1. Operational Loop
+The system operates on a continuous, real-time cycle:
+
+\text{Observe} \longrightarrow \text{Interpret} \longrightarrow \text{Decide} \longrightarrow \text{Act} \longrightarrow \text{Continue}
+ * **Observe & Interpret:** Captures real-time streaming audio via USB microphone and periodic visual frames via an Intel RealSense D435i depth camera.
+ * **Decide:** Processes inputs using the OpenAI Realtime API for conversational intelligence alongside function-calling for gesture classification.
+ * **Act:** Executes physical movements using the Unitree G1 Arm SDK.
+### 2. Operational Modes
+ 1. **Conversational Mode:** Voice-driven interaction paired with dynamic visual awareness.
+ 2. **Gesture Command Mode:** Voice inputs trigger specific physical gestures, featuring automatic arm release mechanisms for safety.
+ 3. **Autonomous Social Mode:** Fully visual gesture recognition that triggers responses without needing voice commands, using confidence thresholds before actuating.
+### 3. Safety & Cost Optimization
+ * **Safety Principles:** Built on a *"Safety > Aesthetics"* philosophy. It uses high-confidence gesture execution only, automatic arm releases, and echo-isolated USB audio to prevent accidental movement.
+ * **Cost Efficiency:** Running real-time multimodal models continuously can cost around **$120/hour**. To optimize this, LAMIS uses:
+   * Dynamic image sampling intervals and JPEG quality adjustments.
+   * Silence-aware audio throttling.
+   * Conditional vision activation.
+### 4. Hardware & Software Requirements
+| Component | Specification |
+|---|---|
+| **Robot Base** | Unitree G1 Quadruped |
+| **Compute** | Intel i7-12700H / Jetson Orin with RTX 3070 / Orin GPU |
+| **Sensors** | Intel RealSense D435i, USB Omnidirectional Mic |
+| **Software** | Python 3.11, OpenAI Realtime API, Unitree G1 Arm SDK |
+### 5. Roadmap
+Current development includes moving from a stable multimodal loop toward depth-aware spatial reasoning, persistent contextual memory, and multi-robot fleet coordination.
+
