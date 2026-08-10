@@ -1,4 +1,4 @@
-```python
+```python 
 name = "Lamis"
 
 def greet(name):
