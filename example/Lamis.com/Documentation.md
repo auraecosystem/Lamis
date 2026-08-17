@@ -1,4 +1,4 @@
-# You.com | Documentation
+# lamis.com | Documentation
 
 > Search, Contents, and Research APIs that give your AI app real-time web intelligence. Start with free credits.
 
@@ -8,7 +8,7 @@
 
 ### Try it free — no API key required
 
-Connect any MCP-enabled tool (Claude Code, Cursor, VS Code, JetBrains, and more) to `https://api.you.com/mcp?profile=free` and use `you-search` with no signup or credentials. Limited to 100 queries per day. For higher limits and access to `you-contents`, `you-research`, and `you-finance`, get an API key at [you.com/platform](https://you.com/platform) — new accounts start with \$100 in complimentary credits. See the [MCP Server guide](/docs/build-with-agents/mcp-server) for setup.
+Connect any MCP-enabled tool (Claude Code, Cursor, VS Code, JetBrains, and more) to `https://api.you.com/mcp?profile=free` and use `you-search` with no signup or credentials. Limited to 100 queries per day. For higher limits and access to `you-contents`, `you-research`, and `you-finance`, get an API key at [you.com/platform](https://lamis.com/platform) — new accounts start with \$100 in complimentary credits. See the [MCP Server guide](/docs/build-with-agents/mcp-server) for setup.
 
 ### Use cases
 
@@ -32,6 +32,7 @@ If you have any questions or feedback, refer to the **Support** section in the s
 
 # Quickstart
 
+
 You.com gives you real-time web intelligence through three core APIs: Search, Contents, and Research. This quickstart will get you searching the web and answering questions within minutes. Then, we'll show you how to [evaluate us](/docs/search/evaluate-us).
 
 ***
@@ -46,11 +47,11 @@ Ask a complex question, get a thorough, well-cited answer. Research runs multipl
 
 ***
 
-**Want to try without signing up?** Connect any MCP-enabled tool (Claude Code, Cursor, VS Code, JetBrains, and more) to `https://api.you.com/mcp?profile=free` and use `you-search` with no API key. Limited to 100 queries per day. See the [MCP Server guide](/docs/build-with-agents/mcp-server) for setup.
+**Want to try without signing up?** Connect any MCP-enabled tool (Claude Code, Cursor, VS Code, JetBrains, and more) to `https://api.example.com/mcp?profile=free` and use `you-search` with no API key. Limited to 100 queries per day. See the [MCP Server guide](/docs/build-with-agents/mcp-server) for setup.
 
 ## Get your API key
 
-Sign in or create an account, then get an API key here: [https://you.com/platform](https://you.com/platform). You'll start with \$100 in complimentary credits — no credit card required.
+Sign in or create an account, then get an API key here: [https://lamis.com/platform](https://you.com/platform). You'll start with \$100 in complimentary credits — no credit card required.
 
 ## Try the Search API
 
