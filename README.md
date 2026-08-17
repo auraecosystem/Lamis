@@ -1,4 +1,5 @@
-< id="lamis-whitepaper" 🤖 LAMIS — LARGE MULTIMODAL SYSTEM
+[id="lamis-whitepaper" 🤖 LAMIS — LARGE MULTIMODAL SYSTEM
+](https://gemini.google.com/)
 
 ### Whitepaper(2026 Edition) 
 
