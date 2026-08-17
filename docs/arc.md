@@ -182,3 +182,46 @@ Total score is the **average of all game scores**, resulting in a final score be
 | 1-99% | A mixture of level completion rates and efficiency relative to human baseline |
 | 0%    | AI never completes a level across any game                                    |
 
+**LAMIS** (Large Multimodal System) is an open-source embodied AI framework developed by Aura Ecosystem to bring real-time voice, vision, and autonomous decision-making to physical robots such as the Unitree G1 quadruped.
+
+---
+
+**Core Perception & Cognition Loop**
+
+The system executes a continuous non-blocking operational cycle: **Observe → Interpret → Decide → Act → Continue**.
+
+* **Perception:** Captures continuous audio streams via omnidirectional USB microphones and periodic visual frames via an Intel RealSense D435i depth camera.
+* **Cognition & Decision:** Utilizes OpenAI's Realtime API for conversational intelligence combined with structured function calling for gesture classification.
+* **Actuation:** Executes physical arm and body movements through the Unitree G1 SDK with high-confidence thresholding and automatic arm releases for physical safety.
+
+**Operational Modes**
+
+* **Conversational Mode:** Continuous voice-driven dialogue paired with periodic visual ingestion.
+* **Gesture Command Mode:** Voice commands trigger mechanical actions with fail-safe arm releases.
+* **Autonomous Social Mode:** Fully vision-based gesture recognition operating independently of voice triggers.
+
+**Hardware & Systems Specifications**
+
+| Component | Specification |
+| --- | --- |
+| **Robot Base** | Unitree G1 Quadruped (12 Servos + Arm SDK) |
+| **Compute** | Intel i7-12700H / Nvidia Jetson Orin |
+| **GPU** | RTX 3070 / Orin GPU |
+| **Sensors** | Intel RealSense D435i Depth Camera, USB Omnidirectional Mic |
+| **Software Stack** | Python 3.11, OpenAI Realtime API, Unitree G1 Arm SDK |
+
+**Cost Optimization Strategies**
+
+To mitigate high continuous multimodal streaming costs (~$120/hr baseline), LAMIS incorporates:
+
+* Dynamic image sampling intervals and JPEG compression adjustments.
+* Silence-aware audio throttling to save token bandwidth.
+* Conditional vision triggers during static environmental conditions.
+
+**Auxiliary Developer Tooling Included**
+
+* **Kaggle MCP & CLI Integration:** Configured Model Context Protocol endpoints (`[https://www.kaggle.com/mcp](https://www.kaggle.com/mcp)`) and CLI commands for ARC Prize competition submissions.
+* **arXiv REST API Integration:** Endpoints for querying metadata, semantic searching, and exporting citation graphs (`arxiv.gg/api/v1/papers`).
+* **BYOND Dream Maker (DM) Script:** Environment setup defining world settings, mob attributes, and tab-indented verb commands.
+
+---
