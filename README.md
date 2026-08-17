@@ -420,5 +420,110 @@ mob
     },
 }
     
-# If you don't already have a token, go to Settings > Generate New Token > Copy.
-# If you don't already have a token, go to Settings > Generate New Token > Copy.
+Assuming you want a consolidated technical summary and documentation guide for the updated **LAMIS** whitepaper and its associated developer tools:
+
+---
+
+### 1. Core Framework Architecture
+
+**LAMIS** (Large Multimodal System) is an open-source embodied AI engine developed by **Aura Ecosystem**. It bridges cloud-based multimodal reasoning with physical robotic actuators.
+
+$$\text{Observe} \longrightarrow \text{Interpret} \longrightarrow \text{Decide} \longrightarrow \text{Act} \longrightarrow \text{Continue}$$
+
+* **Perception:** Low-latency audio capture via omnidirectional USB microphones paired with periodic RGB-D frame ingestion via an Intel RealSense D435i camera.
+* **Cognition & Decision:** Bidirectional streaming audio and image context processing using OpenAI's Realtime API, using structured function calling to select physical action primitives.
+* **Actuation:** Motor control executed through the Unitree G1 Arm SDK with automatic arm-release safety mechanisms.
+
+### Operational Modes
+
+* **Conversational Mode:** Bidirectional speech interaction with dynamic visual awareness.
+* **Gesture Command Mode:** Spoken commands trigger physical gestures with safety-monitored arm releases.
+* **Autonomous Social Mode:** Vision-only human presence and gesture detection triggering physical actions based on model confidence scores ($\ge 85\%$).
+
+---
+
+### 2. Hardware & Infrastructure Specifications
+
+| Component | Specification |
+| --- | --- |
+| **Robotic Platform** | Unitree G1 Quadruped (12 Servos + Arm SDK) |
+| **Compute Board** | Intel i7-12700H or NVIDIA Jetson Orin |
+| **GPU Acceleration** | NVIDIA RTX 3070 Mobile / Orin GPU |
+| **Sensors** | Intel RealSense D435i Depth Camera, USB Omnidirectional Mic |
+| **Software Stack** | Python 3.11, OpenAI Realtime API, Unitree G1 SDK |
+
+---
+
+### 3. ARC-AGI-3 & Benchmark Integration
+
+LAMIS integrates agent evaluation protocols tailored for frontier AI benchmarks like **ARC-AGI-3** (testing exploration, percept-plan-action loops, spatial reasoning, and memory).
+
+**Kaggle Submission Command:**
+
+```bash
+kaggle competitions submit -c arc-prize-2026-arc-agi-3 \
+  -f submission.parquet \
+  -k auraecosystem/<NOTEBOOK> \
+  -v <VERSION> \
+  -m "Submission message"
+
+```
+
+---
+
+### 4. Developer Tools & API Extensions
+
+#### Kaggle Model Context Protocol (MCP) Setup
+
+Configure the Kaggle MCP endpoint to enable agentic competition workflows:
+
+```json
+{
+  "mcpServers": {
+    "kaggle": {
+      "transport": "http",
+      "httpUrl": "https://www.kaggle.com/mcp",
+      "headers": {
+        "Authorization": "Bearer <YOUR_TOKEN>"
+      }
+    }
+  }
+}
+
+```
+
+#### arXiv REST API Endpoints
+
+Access paper metadata, semantic search, citation graphs, and BibTeX exports programmatically:
+
+```bash
+# Fetch paper metadata
+curl "https://arxiv.gg/api/v1/papers/1706.03762"
+
+# Semantic search across research papers
+curl "https://arxiv.gg/api/v1/search/semantic?q=embodied+multimodal+robotics&limit=10"
+
+# Citation graph retrieval
+curl "https://arxiv.gg/api/v1/papers/1706.03762/graph"
+
+```
+
+#### BYOND Dream Maker (.dm) Game Scripting Syntax
+
+For simulated world environments, the Dream Maker engine relies on strict tab indentation, object hierarchies, and console output streaming:
+
+```dm
+world
+    fps = 30
+    view = 6
+    turf = /turf/floor
+
+mob
+    var/hp = 100
+    var/max_hp = 100
+
+    verb/check_status()
+        set category = "Commands"
+        src << "Your current HP is [hp]/[max_hp]."
+
+```
