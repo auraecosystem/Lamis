@@ -45,6 +45,40 @@ LAMIS is **not just a speech recognition or vision system**. It is a **continuou
 ```console
 kaggle competitions submit -c arc-prize-2026-arc-agi-3 -f submission.parquet -k auraecosystem/<NOTEBOOK> -v <VERSION> -m "Message"
 ```
+
+```index.html
+<div style={{ display: 'flex', alignItems: 'flex-start', gap: '1rem' }}>
+  <div style={{ flex: 1 }}>
+    <p>
+      Traditionally, to measure AI, static benchmarks have been the yardstick.
+      These work well for evaluating LLMs and AI reasoning systems. However, to evaluate frontier AI agent systems, we
+      need new tools that measure:
+    </p>
+```
+    <ul>
+      <li>Exploration</li>
+      <li>Percept → Plan → Action</li>
+      <li>Memory</li>
+      <li>Goal Acquisition</li>
+      <li>Alignment</li>
+    </ul>
+
+    <p>
+      By building agents that can play ARC-AGI-3, you're directly contributing
+      to the frontier of AI research. <br /><br /> Learn more about{' '}
+      <a href="https://arcprize.org/arc-agi/3">ARC-AGI-3</a>.
+    </p>
+  </div>
+
+  <div style={{ flex: 1, textAlign: 'center' }}>
+    <img src="https://mintcdn.com/arcprizefoundation/sx3SsV7kmM_q56IF/images/Ls20Human.gif?s=61025c7aeb245af080aba9e735a6f1cf" alt="Human playing LS20" width="512" height="512" data-path="images/Ls20Human.gif" />
+
+    <p>
+      Can you build an agent to beat{' '}
+      <a href="https://arcprize.org/tasks/ls20">this game</a>?
+    </p>
+  </div>
+</div>
 ### Features
 
 - 🎙️ Streaming voice input & output
