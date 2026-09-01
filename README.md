@@ -92,8 +92,7 @@ kaggle competitions submit -c arc-prize-2026-arc-agi-3 -f submission.parquet -k 
 
 **Operational Loop:**
 
-```fsx
-
+```fsi
 Observe → Interpret → Decide → Act → Continue
 
 ```
@@ -102,8 +101,7 @@ Observe → Interpret → Decide → Act → Continue
 
 ## 🏗 System Architecture
 
-```fsharp
-
+```fsx
 Audio In  ─┐
 ├──► LAMIS Multimodal Engine ───► Audio Out
 Vision In ─┘               │
@@ -239,7 +237,10 @@ LAMIS is **embodied intelligence** — a leap beyond software into real-world au
 2. Unitree G1 SDK Reference  
 3. Intel RealSense D435i Technical Guide  
 4. Research on Human-Robot Interaction (HRI)
-
+```bash
+https://github.com/AnswerDotAI/fasthtml-example/tree/main/00_game_of_life
+cd 00_game_of_life
+```
 ---
 
 ## 🔗 Links
