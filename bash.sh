@@ -1,3 +1,6 @@
+https://github.com/AnswerDotAI/fasthtml-example.git
+cd fasthtml-example
+
 find . -maxdepth 2 -name "package.json"
 find . -maxdepth 2 -name "requirements.txt"
 find . -maxdepth 2 -name "pyproject.toml"
