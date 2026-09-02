@@ -29,6 +29,8 @@ LAMIS (Large Multimodal System) is an advanced AI framework that **empowers phys
 - Autonomous social interactions
 - Safety-first robotic actuation
 - Cost-optimized operation for sustained deployment
+- [run](f6330dcb-fab5-4d4d-8270-98c27cbfb1df)
+- 
 
 ---
 
@@ -72,7 +74,7 @@ kaggle competitions submit -c arc-prize-2026-arc-agi-3 -f submission.parquet -k 
   </div>
 
   <div style={{ flex: 1, textAlign: 'center' }}>
-    <img src="https://mintcdn.com/arcprizefoundation/sx3SsV7kmM_q56IF/images/Ls20Human.gif?s=61025c7aeb245af080aba9e735a6f1cf" alt="Human playing LS20" width="512" height="512" data-path="images/Ls20Human.gif" />
+    <img src="https://mintcdn.com/arcprizefoundation/sx3SsV7kmM_q56IF/images/Ls20Human.gif?s=f6330dcb-fab5-4d4d-8270-98c27cbfb1df" alt="Human playing LS20" width="512" height="512" data-path="images/Ls20Human.gif" />
 
     <p>
       Can you build an agent to beat{' '}
