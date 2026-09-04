@@ -1,6 +1,9 @@
-https://arcprize.org/play/tr87-cd924810
+https://arcprize.org/task/play/tr87-cd924810
+https://arcprize.org/scorecards/ddadb758-44d3-4fcb-be8b-a1ed7afa9538
+
 https://arcprize.org/play/889b0103-58fc-4edf-b1df-450c6f03a669
 https://arcprize.org/play/889b0103-58fc-4edf-b1df-450c6f03a669
 https://arcprize.org/play/85af86b0-9cc8-4347-b34e-4b8cbff60890
 https://arcprize.org/play/bf6298f6-c132-4e88-8898-4de797994d19
 https://arcprize.org/play/ls20-9607627b
+
