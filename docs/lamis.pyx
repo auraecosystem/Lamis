@@ -6,6 +6,7 @@ def greet(name):
 print(greet(name))
 
 print("Welcome to My First AI")
+
 # algorithm 
 
 numbers = [5, 2, 8, 1]
