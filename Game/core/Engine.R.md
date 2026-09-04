@@ -48,7 +48,7 @@ def clean_up_gender_data(gender):
   np.unique(gender)
   gender = gender.astype(np.int)
   return gender
-
+ 
 def clean_up_age_data(age):
     age = np.asarray(age)
     age[np.where(age == "NaN")] = -1
