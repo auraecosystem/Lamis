@@ -78,7 +78,7 @@ kaggle competitions submit -c arc-prize-2026-arc-agi-3 -f submission.parquet -k 
 
     <p>
       Can you build an agent to beat{' '}
-      <a href="https://arcprize.org/tasks/ls20">this game</a>?
+      <a href="https://arcprize.org/tasks/ls20">this game</a>?https://mintcdn.com/arcprizefoundation/sx3SsV7kmM_q56IF/images/Ls20Human.gif?s=f6330dcb-fab5-4d4d-8270-98c27cbfb1df
     </p>
   </div>
 </div>
