@@ -531,3 +531,4 @@ mob
         src << "Your current HP is [hp]/[max_hp]."
 
 ```
+<a href="https://daily.dev/webfourapplication"><img src="https://api.daily.dev/devcards/v2/mIrC3lJHqAvqNKsjGw9w0.png?type=default&r=6hw" width="356" alt="web4's Dev Card"/></a>
